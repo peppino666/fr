@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="id="navbar">
+            <a id="utente" class="navbar-brand"></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--ATTIVO-->
+      
+
+    <section class="container">
+          <!--Attivo-->
+          <div class="col-12 col-md-6 mb-5" id="attivo">
+            <div class="mb-5">
+              <h2>DATI</h2>
+              <div id="attivo_dati"></div>
+              </div>
+              <!-- <div class="flexbox space-between">
+                <input type="text" class="me-5 form-control" id="ricerca-seriali">
+                <button type="submit" class="btn btn-primary">Inserisci Seriale</button>
+              </div> -->
+            </div>
+          </div>
+          <!--IMPIANTI E GUASTI-->
+        <div class="col-12 col-md-6 mb-5" id="Attività">
+            <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Attivazioni
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div id="impianti_list"></div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Disservizi
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-12 col-md-6" id="Magazzino">
+            <form>
+                <div class="flexbox space-between">
+                    <input type="text" class="me-5 form-control" id="ricerca-seriali">
+                    <button type="submit" class="btn btn-primary">Ricerca Seriali</button>
+                </div>
+              </form>
+        </div>
+
+      
+
+
+        <!--CARD IMPIANTI
+        <section class="container-fluid my-5 impianti_card">
+          <div class="row">
+            <div class="col-10">
+              <h3>$nome</h3>
+            </div>
+            <div class="col-2">
+              <h3>$data<br>$ora</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <ul>
+                <li>$indirizzo</li>
+                <li>$numero</li>
+                <li>$codice_olo</li>
+                <li>$gpon</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-warning">Warning</button>
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-warning">Warning</button>
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-warning">Warning</button>
+            </div>
+          </div>
+        </section>
+
+
+
+        FINE CARD IMPIANTI-->
+
+
+
+
+
+    </section>
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

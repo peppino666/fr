@@ -1,0 +1,45 @@
+{"impianti":[
+        {
+                "codice_olo":"OPI_12345678",
+                "nome_clt":"Giuseppe Arcieri",
+                "indirizzo":"Via Quarantola 8/A",
+                "id_risorsa":"1659...0000",
+                "gpon":"PI_01/06w12-SP_02",
+                "olo":"Vodafone",
+                "porta_pfs":"",
+                "orario":"8:30",
+                "id":"1",
+                "nome_pte":"",
+                "data": "17/03/2023",
+                "contatto" : "3287788999"
+        },
+        {
+                "codice_olo":"FW_SP000000012345",
+                "nome_clt":"Dario Baroni",
+                "indirizzo":"Viareggio",
+                "id_risorsa":"1659...0001",
+                "gpon":"PI_01/06w12-SP_03",
+                "olo":"Fastweb",
+                "porta_pfs":"",
+                "orario":"11:30",
+                "id":"2",
+                "nome_pte":"",
+                "data" : "17/03/2023",
+                "contatto" : "3351122333"
+        },
+        {
+                "codice_olo":"WN_90011234567",
+                "nome_clt":"Luigi Ferrari",
+                "indirizzo":"Via Giulio Cesare",
+                "id_risorsa":"1659...0002",
+                "gpon":"PI_01/06w12-SP_01",
+                "olo":"Wind",
+                "porta_pfs":"",
+                "orario":"14:30",
+                "id":"3",
+                "nome_pte":"",
+                "data" : "17/03/2023",
+                "contatto" : "3314455666"
+        }
+]
+}
