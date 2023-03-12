@@ -19,11 +19,11 @@ function loadImpianti(data){
             let id = step.id =`${index}`;
             impianti.push(step);
             setImpianti(id);
+            setAttivo(id);
         });
 };
 
 function setImpianti(id){
-    console.log(impianti);
         let target = document.querySelector("#impianti_list");
         let content = document.createElement("div");
         content.innerHTML =
@@ -65,9 +65,9 @@ function setImpianti(id){
 `
 
         target.appendChild(content);
+
     
 };
-
 
 function setUtente(nome){
     target = document.querySelector("#utente");
@@ -75,35 +75,28 @@ function setUtente(nome){
     content.innerHTML = `${nome}`
     target.appendChild(content);
 }
-let target = document.querySelector("#attivo_dati");
-console.log(target);
-function setAttivo(attivo){
-    let tgt_button = document.querySelector("#button0");
-        console.log(tgt_button);
-        tgt_button.addEventListener("click",attivo);
-    
-        function attivo(){
-                console.log("ciao");
-                let target = document.querySelector("#attivo_dati");
-                content = document.createElement("div");
-                content.innerHTML = `
-                                        <span class="block">
-                                            Cliente: ${impianti[id].nome_clt}
-                                        </span>
-                                        <span class="block">
-                                            Indirizzo: ${impianti[id].indirizzo}
-                                        </span>
-                                        <span class="block">
-                                            Id Risorsa: ${impianti[id].id_risorsa}
-                                        </span>
-                                    `;
-                target.appendChild(content);
-        };
+function setAttivo(id){
+    console.log(impianti);
+    let button = document.querySelector(`#button${id}`)
+    console.log(button);
+    button.addEventListener("click",function(){
+        let target = document.querySelector("#attivo_dati");
+        let content = document.createElement("div");
+        content.innerHTML = `<section class="container">
+        <div class="row">
+          <ul class="impianti_card">
+            <li class="ms-5">${impianti[id].codice_olo}</li>
+            <li class="ms-5">${impianti[id].contatto}</li>
+            <li class="ms-5">${impianti[id].id_risorsa}</li>
+          </ul>
+        </div>
+      </section>`
+        target.appendChild(content);
+    })
 }
 
 
 setUtente("peppe");
-setAttivo();
 
 
 const utente = {
